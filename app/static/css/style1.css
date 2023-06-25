@@ -1,0 +1,363 @@
+nav {
+  background-color: #000000;
+  height: 100px; 
+  display: flex;
+  position:end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar a {
+  color: #ffffff79;
+  text-decoration:none;
+  margin-right: 20px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+  text-align: center;
+
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+  .logo img {
+    height: 90px; 
+    width: auto;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .image {
+    margin: 20px;
+    text-align: center;
+    position: relative; 
+  }
+  
+  .image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #000000;
+  }
+  
+  .image h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 85px;
+    position: end;
+    height: 240px;
+  }
+  
+  .container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-wrapper {
+    background-color: rgb(38, 50, 56);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(38, 50, 56);
+    color: aliceblue;
+    text-align: center;
+    border: 2px solid #000000;
+  }
+  
+  form {
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #e03e3e;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  label {
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+  }
+  
+  input[class="text"],
+  input[class="email"],
+  textarea {
+    background-color: rgb(96, 125, 139);
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #e03e3e;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee';
+    font-family: 'Labrada', serif;
+    font-family: 'Titan One' ;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn-enviar {
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-text-stroke: 2px #000000;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #0062cc;
+  }
+  
+  p {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    position: center;
+    top: 0%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  
+  a {
+    color: #e03e3e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration-color: #fff;
+  }
+  
+  .capa {
+    top: 50px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff00;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  .capa a {
+    font-family: 'Bungee', cursive;
+    font-family: 'Labrada', serif;
+    font-family: 'Titan One', cursive;
+    color: #fff;
+    border-color: #000000;
+    border-radius: 10%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 47px;
+    margin: 300px, 300px;
+    -webkit-text-stroke: 2px black;
+    cursor: pointer;
+    width: 300px;
+    height: 300px
+  }
+  
+  .image:hover .capa {
+    transform: scale(1);
+    left: 0;
+    right: 0;
+  }
+  
+  .image {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+  .image:hover img {
+    filter: blur(3px);
+  }
+  
+  .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff00;
+    transform: scale(0);
+    transition: 1.2s ease;
+  }
+  
+.CorreoContacto {
+  position: center;
+  bottom: 25px;
+  
+}
+
+.toast_alert {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px 35px 20px 25px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+
+  /*animation: efectoBounce .3s ease infinite alternate; */
+}
+
+.toast_alert.active {
+  transform: translateX(0%);
+  display: block;
+}
+
+.toast_alert .toast_alert-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast_alert-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  min-width: 35px;
+  background-color: #24bca6;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.toast_alert-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.toast_alert .close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 17px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+.toast_alert .close:hover {
+  background-color: #cecece;
+}
+
+.toast_alert .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+
+}
+
+.toast_alert .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #24bca6;
+}
+
+.progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+      right: 100%;
+  }
+}

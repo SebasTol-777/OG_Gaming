@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css')}}">
+<script src="{{ url_for('static',filename='js/funciones.js')}}"></script>
+<script src="{{ url_for('static',filename='js/custom_alert.js')}}"></script>
+{% block body %}
+ <div class="Alerta">
+  
+  {% include 'public/alerts.html' %}
+ </div>
+  <nav>
+    <div class="navbar">
+      <label for="" class="logo">
+          <a href=""><img src="{{ url_for('static',filename='imgs/OG.png')}}" alt="Logo"></a>
+      </label>
+      <div class="navtext">
+      <a href="#" onclick="inicio()"></a>
+      <a href="#" onclick="login()">Login</a>
+      <a href="#" onclick="Registro_Clientes()">Registro</a>
+    </div> 
+    </div>
+  </nav>
+  <div class="image-container">
+    <div class="image">
+      <a onclick="juegos()"><img src="{{ url_for('static',filename='imgs/videojuegos.png')}}" alt="Videojuegos"></a>
+      <div class="capa">
+      <a onclick="juegos()"><strong>Juegos</strong></a>
+    </div>
+    </div>
+    <div class="image">
+      <a onclick="Perifericos()"><img src="{{ url_for('static',filename='imgs/perifericos.png')}}" alt="Perifericos"></a>
+      <div class="capa">
+      <a onclick="Perifericos()"><strong>Perifericos</strong></a>
+    </div>
+    </div>
+    
+    <div class="image">
+      <a onclick="Hardware()"><img src="{{ url_for('static',filename='imgs/hardware.png')}}" alt="Hardware"></a>
+      <div class="capa">
+      <a onclick="Hardware()"><strong>Hardware y Cables</strong></a>
+    </div>
+    </div>
+    <div class="image">
+      <a onclick="sobre_nos()"><img src="{{ url_for('static',filename='imgs/quees.png')}}"  alt="¿Ques es OG Gaming?"></a>
+      
+      <div class="capa">
+      <a onclick="sobre_nos()"></a><strong>Sobre nosotros</strong></a>
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="form-wrapper">
+      <h2>Contáctanos</h2>
+      <form action="registrarForm" method="POST" name="" onsubmit="return Confirmacion()">
+        <label for="name">Nombre:</label>
+        <input class="text" id="name" name="Nombre">
+      
+        <label for="email">Correo electrónico:</label>
+        <input class="email" id="email" name="Email">
+      
+        <label for="message">Mensaje:</label>
+        <textarea class="message" name="Mensaje" rows="3"></textarea>
+    
+        <input type="submit" value="Enviar" class="btn-enviar" onclick="return Confirmacion()" >
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>Contacto: <a href="mailto:oggaming.fresh420@gmail.com">oggaming.fresh420@gmail.com</a></p>
+  </footer>
+
+
+{% endblock %}
+
